@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <title>Cover designer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="border border-dark h-100">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col border-right border-dark h-100">
+          <form method="post">
+            <div class="row mt-5">
+              <div class="col pr-0">
+                <button type="button" class="btn btn-dark w-75 no-click">Book title</button>
+              </div>
+              <div class="col mr-5 pl-0">
+                <div class="input-group mb-3">
+                  <input id="book-title" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col pr-0">
+                <button type="button" class="btn btn-dark w-75 no-click">Book subtitle</button>
+              </div>
+              <div class="col mr-5 pl-0">
+                <div class="input-group mb-3">
+                  <input id="book-subtitle" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col pr-0">
+                <button type="button" class="btn btn-dark w-75 no-click">Author name</button>
+              </div>
+              <div class="col mr-5 pl-0">
+                <div class="input-group mb-3">
+                  <input id="book-author" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col pr-0">
+                <button type="button" class="btn btn-dark w-75 no-click">Background color</button>
+              </div>
+              <div class="col mr-5 pl-0">
+                <div class="input-group mb-3">
+                  <input id="book-color" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col pr-0">
+                <button type="button" class="btn btn-dark w-75 no-click">Publisher</button>
+              </div>
+              <div class="col mr-5 pl-0">
+                <div class="input-group mb-3">
+                  <input id="book-publisher" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col pr-0">
+                <button type="button" class="btn btn-dark w-75 no-click">Publishing year</button>
+              </div>
+              <div class="col mr-5 pl-0">
+                <select id="book-year" class="custom-select" required>
+                  <option selected>Year</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-5 ml-5">
+              <div class="col ml-5">
+                <button onClick="change()" type="submit" class="btn btn-dark w-25 ml-5">Generate</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col">
+          <div id="changed-color" class="border mx-5 mt-5 h-75 pl-5 pt-5">
+            <h1 id="changed-title" class="text-center">Book title</h1>
+            <h4 id="changed-subtitle" class="text-center pb-5">Book subtitle</h4>
+            <h2 id="changed-author" class="text-center pt-5">Book Author</h2>
+            <h5 id="changed-publisher" class="text-center">Publisher</h5>
+            <h5 id="changed-year" class="text-center">Publishing year</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
